@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.vals.ai/sdk/setup
+docs: https://docs.vals.ai/cli/cli#authentication
+summary:
+  types: [apiKey]
+  api_key_in: [environment]
+  oauth2_flows: []
+schemes:
+  - name: VALS_API_KEY
+    type: apiKey
+    in: environment
+    description: >-
+      API keys are created on the Admin page of the platform.vals.ai console
+      (account signup + email confirmation required). The SDK and CLI read the
+      key from the VALS_API_KEY environment variable, or it can be set
+      programmatically via vals.configure_credentials(api_key=...).
+    sources:
+      - https://docs.vals.ai/sdk/setup
+      - https://docs.vals.ai/get_started/quickstart
+regions:
+  - name: US (default)
+    endpoint: https://platform.vals.ai
+  - name: EU
+    how: 'export VALS_REGION="europe" or configure_credentials(api_key=..., in_eu=True)'
+  - name: Custom deployment
+    how: 'export VALS_ENDPOINT="https://your-org.platform.vals.ai" or configure_credentials(endpoint=...)'
+notes: >-
+  No public OpenAPI is published, so no securitySchemes could be derived from
+  a spec; this profile is captured from the SDK/CLI authentication docs. No
+  OAuth2/OIDC surface is documented.

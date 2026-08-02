@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.vals.ai/cli/cli
+name: vals
+description: >-
+  First-party command-line interface for the Vals AI evaluation platform.
+  Ships inside the `valsai` Python package. Good for simple workflows such as
+  running a test suite or pulling a run; the Python SDK is recommended for
+  more complex workflows.
+install:
+  - method: pip
+    command: pip install valsai
+authentication:
+  type: apiKey
+  env: VALS_API_KEY
+  how: Create an API key on the Admin page of the platform.vals.ai console
+  programmatic: 'from vals.sdk.auth import configure_credentials; configure_credentials(api_key=...)'
+commands:
+  - group: suite
+    description: Creating / updating tests and test suites
+    commands:
+      - name: vals suite create -f <file.json>
+        description: Create a test suite from a JSON file
+      - name: vals suite update -f <file.json> -s <test_suite_id>
+        description: Update an existing test suite
+      - name: vals suite pull -f <file> -s <test_suite_id> --csv|--json
+        description: Pull a test suite locally to CSV or JSON
+      - name: vals suite list
+        description: List all test suites
+      - name: vals suite run -s <test_suite_id> --model <provider/model>
+        description: Run a test suite against a model
+        flags:
+          - '--wait-for-completion: wait for the run to complete before exiting'
+          - '--run-name: name the run for easy identification'
+          - '--eval-model: model to use as the LLM-as-judge'
+  - group: run
+    description: Creating and querying runs and run results
+    commands:
+      - name: vals run list [--suite-id <test_suite_id>]
+        description: List runs, optionally for a single suite
+      - name: vals run pull -r <run_id> -f <file> --csv|--json
+        description: Pull the data for a single run
+  - group: project
+    description: Managing projects
+key_flows:
+  - name: CI/CD on every pull request
+    docs: https://docs.vals.ai/cli/cicd
+    description: >-
+      GitHub Action vals-ai/valsai-github-action runs a suite against a
+      vals_entry.py entry function on each PR and comments results.
+  - name: Live evals (beta)
+    docs: https://docs.vals.ai/cli/live_evals
+    description: >-
+      vals.sdk.realtime.evaluate() scores live model output against check
+      operators (grammar, includes, is_safe, is_not_hallucinating, ...).

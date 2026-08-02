@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/valsai/
+packages:
+  - language: python
+    registry: pypi
+    name: valsai
+    url: https://pypi.org/project/valsai/
+    install: pip install valsai
+    version: 0.3.11
+    requires_python: '>=3.11'
+    description: SDK for the Vals AI Platform (also ships the `vals` CLI)
+    official: true
+  - language: python
+    registry: github-actions
+    name: vals-ai/valsai-github-action
+    url: https://github.com/vals-ai/valsai-github-action
+    install: 'uses: vals-ai/valsai-github-action@v0.0.17'
+    description: GitHub Action that runs a Vals test suite against every pull request
+    official: true
+notes: >-
+  npm, NuGet, Maven Central, RubyGems, Packagist, crates.io and pkg.go.dev were
+  checked on 2026-07-21 - no first-party Vals AI client libraries were found in
+  those registries (PyPI `vals` is an unrelated third-party project). The
+  Python package `valsai` is the single official SDK and CLI.

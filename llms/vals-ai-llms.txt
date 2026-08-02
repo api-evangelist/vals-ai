@@ -1,0 +1,36 @@
+# Vals
+
+## Docs
+
+- [Integrating Vals.AI with Github Actions](https://docs.vals.ai/cli/cicd.md)
+- [Vals.ai CLI](https://docs.vals.ai/cli/cli.md)
+- [Live Evals (Beta)](https://docs.vals.ai/cli/live_evals.md)
+- [Glossary](https://docs.vals.ai/get_started/glossary.md)
+- [Introduction](https://docs.vals.ai/get_started/introduction.md)
+- [Quickstart](https://docs.vals.ai/get_started/quickstart.md): Get started with the Vals Platform
+- [Creating Test Suites with the SDK](https://docs.vals.ai/sdk/creating_test_suites.md)
+- [Custom Metrics](https://docs.vals.ai/sdk/custom_metrics.md)
+- [Human Review](https://docs.vals.ai/sdk/human_review.md)
+- [Running Test Suites](https://docs.vals.ai/sdk/running_suites.md)
+- [SDK Setup](https://docs.vals.ai/sdk/setup.md)
+- [Tracing](https://docs.vals.ai/sdk/tracing.md)
+- [Providing Context](https://docs.vals.ai/web_app/contexts.md)
+- [Creating a Test Suite](https://docs.vals.ai/web_app/creating_test_suites.md)
+- [Custom Metrics](https://docs.vals.ai/web_app/custom_metrics.md)
+- [Dashboard](https://docs.vals.ai/web_app/dashboard.md)
+- [Writing Effective Criteria](https://docs.vals.ai/web_app/effective_tests.md)
+- [Import and Export](https://docs.vals.ai/web_app/import_export.md)
+- [Check Modifiers](https://docs.vals.ai/web_app/modifiers.md)
+- [Operators](https://docs.vals.ai/web_app/operators.md)
+- [Viewing Results](https://docs.vals.ai/web_app/results.md)
+- [Right Answers](https://docs.vals.ai/web_app/right_answers.md)
+- [Running Test Suites](https://docs.vals.ai/web_app/run.md)
+
+## OpenAPI Specs
+
+- [package](https://docs.vals.ai/package.json)
+- [package-lock](https://docs.vals.ai/package-lock.json)
+
+## Optional
+
+- [Benchmarks](https://vals.ai)

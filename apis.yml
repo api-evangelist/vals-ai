@@ -1,9 +1,28 @@
 aid: vals-ai
 name: Vals Ai
-description: 'Vals Ai is a company surfaced as a portfolio company of 8vc, a16z, bloomberg-beta and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Vals AI is an independent AI model evaluation company that publishes
+  private, domain-specific benchmarks in legal, tax, finance, medical, and
+  coding domains, and operates the Vals Platform - scalable evaluation
+  infrastructure that lets labs and engineering teams build test suites,
+  run LLM evaluations with LLM-as-judge and expert review, and wire evals
+  into CI/CD. Developers work with the platform through the valsai Python
+  SDK, the vals CLI, and a GitHub Action; the company is backed by 8VC,
+  a16z, and Bloomberg Beta.
 url: https://raw.githubusercontent.com/api-evangelist/vals-ai/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.vals.ai/og.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +31,24 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Artificial Intelligence
+- LLM
+- Evaluation
+- Benchmarks
+- Model Testing
+- Legal
+- Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +56,33 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vals-ai-domain-security.yml
 - type: Website
   url: https://vals.ai
+- type: Documentation
+  url: https://docs.vals.ai/
+- type: GettingStarted
+  url: https://docs.vals.ai/get_started/quickstart
+- type: DeveloperPortal
+  url: https://platform.vals.ai
+- type: SignUp
+  url: https://platform.vals.ai
+- type: PrivacyPolicy
+  url: https://www.platform.vals.ai/privacy/Product_Privacy_Statement.pdf
+- type: GitHubOrganization
+  url: https://github.com/vals-ai
+- type: Twitter
+  url: https://x.com/ValsAI
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vals-ai/
+- type: LLMsTxt
+  url: llms/vals-ai-llms.txt
+- type: Packages
+  url: packages/vals-ai-packages.yml
+- type: SDKs
+  url: packages/vals-ai-packages.yml
+- type: CLI
+  url: cli/vals-ai-cli.yml
+- type: Authentication
+  url: authentication/vals-ai-authentication.yml
