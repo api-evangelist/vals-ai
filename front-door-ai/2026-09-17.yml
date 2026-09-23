@@ -1,0 +1,36 @@
+# Front Door AI Index — vals-ai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: vals-ai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: vals.ai
+  final_host: www.vals.ai
+  ownership: own
+  owner: vals-ai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 601
+  host_score: 601
+  density: 28.74
+  words: 20912
+  tiers:
+    agentic: 29
+    core: 64
+    model: 508
+  ambiguous: 96
+  top_terms:
+    Claude: 171
+    GPT: 142
+    Gemini: 95
+    agent: 93
+    AI: 50
+    Anthropic: 34
+    Mistral: 23
+    Llama: 22
+    OpenAI: 20
+    agentic: 20
+    foundation model: 8
+    AI agent: 4
